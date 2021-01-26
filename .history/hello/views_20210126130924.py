@@ -22,10 +22,10 @@ def db(request):
 
 
 def secret(request):
-    hello = "hello lord, you make me alive on internet "
+
+    hello = "hello lord we are alive",
 
     context = {
         "hello": hello
     }
-
     return render(request, "new.html", context)
