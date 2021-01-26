@@ -4,8 +4,6 @@ from django.http import HttpResponse
 from .models import Greeting
 
 # Create your views here.
-
-
 def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
@@ -19,15 +17,3 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, "db.html", {"greetings": greetings})
-
-
-def db(request):
-
-    hello = "hello lord we are alive",
-
-
-context = {
-    "hello": hello
-}
-
-return render(request, "index.html", context)
