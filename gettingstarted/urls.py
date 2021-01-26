@@ -18,5 +18,6 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
-    path("secret/", hello.views.secret, name="secret")
+    path("secret/", hello.views.secret, name="secret"),
+    path("flickr/",  include("flickr.urls") )
 ]
